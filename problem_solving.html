@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-  <title>EP - Proposal</title>
+  <title>EP - EDP</title>
   <meta content="" name="description">
   <meta content="" name="keywords">
 
@@ -90,7 +90,7 @@
         <div class="container">
           <div class="row align-items-stretch">
             <div class="col-md-8" data-aos="fade-up">
-              <img src="assets/img/autopilot.jpg" alt="Image" class="img-fluid">
+              <img src="assets/img/pure_pursuit.png" alt="Image" class="img-fluid">
             </div>
             <br>
             &nbsp;
@@ -132,16 +132,40 @@
                     <br>
                     The papers provide a great insight as to how they implement the Pure Pursuit algorithm and some of the improvements that they have made. I was planning on using a PID-controller already but the implementation of a low-pass filter seems really interesting to me. I'll see what we can achieve by using a low pass filter or a Kalman Filter. 
                     
-                     
-                    
+              
                     Teams that have implemented Pure Pursuit do not include motion profiling. Don't get me wrong, pure pursuit works great for them and they have been far more successful with autonomous than I will be this year but I believe motion profiling can give the edge in speed/time for autonomous operation. 
 
                   </p>
 
                 </div>
 
-                <p class="mb-4"><span class="text-muted">Math</span></p>
 
+
+                <p class="mb-4"><span class="text-muted">Math</span></p>
+                <div class="col-md-8" data-aos="fade-up">
+                  <p>Basis Of Pure Pursuit: Waypoint. Waypoint is a vector that can possess either 3 or 4 elements (x, y, heading, and optional: velocity). Each PP-Path contains several waypoints. </p>
+                  <img src="assets/img/engineering_design_process/IMG_0164.jpg" alt="Image" class="img-fluid">
+                </div>
+
+                <div class="col-md-8" data-aos="fade-up">
+                  <p>Pure Pursuit Motor Power Calculations: Using the current robot's localization vector and the target vector. Utilizing basic trigonometric and mathematical equations, we are able to obtain the appropriate power powers to assign to the motors. These calculations are based on the kinematics of mecanum drive. </p>
+                  <img src="assets/img/engineering_design_process/IMG_0165.jpg" alt="Image" class="img-fluid">
+                </div>
+
+                <div class="col-md-8" data-aos="fade-up">
+                  <p>Interpolation of Target Velocity for Motion Profiling: Equations based on the kinematics of mecanum drive. </p>
+                  <img src="assets/img/engineering_design_process/IMG_0166.jpg" alt="Image" class="img-fluid">
+                </div>
+
+                <div class="col-md-8" data-aos="fade-up">
+                  <p>Extended Kalman Filter Math: Imagine we have some sensor that provides the robot with some sort of input The sensor, at some #-hz polls, has noise. This can affect our calculations. Thus, we use a Kalman Filter to de-noise the input that we receive to have a smoother estimation of the reading. This involves a lot of linear algebra and multi-variable calculus. These equations are solely for my understanding. My code implementation follows this. </p>
+                  <img src="assets/img/engineering_design_process/IMG_0167.jpg" alt="Image" class="img-fluid">
+                </div>
+
+                <div class="col-md-8" data-aos="fade-up">
+                  <p>4-Wheel Odometry w/ IMU on Extended Kalman Filter Calculations: This is the localization math assuming a 4-wheel odometry system combined with IMU/Vision (aka my dream software robot). We use this equation to derive the absolute world position of the robot. It seems like a mess on the board but the equations derive out of the position of the robot using Euler Integration. Then, we apply a Kalman Filter to the readings of the sensors and the various localization inputs we have. It seems complicated but simpler in code. </p>
+                  <img src="assets/img/engineering_design_process/IMG_2976.jpeg" alt="Image" class="img-fluid">
+                </div>
                 <div class="mb-5">
                   
 

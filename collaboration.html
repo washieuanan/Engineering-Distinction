@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-  <title>MyPortfolio Bootstrap Template - Work Single</title>
+  <title>EP - Collaboration</title>
   <meta content="" name="description">
   <meta content="" name="keywords">
 
@@ -67,7 +67,7 @@
 
   <nav class="navbar navbar-light custom-navbar">
     <div class="container">
-      <a class="navbar-brand" href="index.html">MyPortfolio.</a>
+      <a class="navbar-brand" href="index.html">Washieu Anan</a>
       <a href="#" class="burger" data-bs-toggle="collapse" data-bs-target="#main-navbar">
         <span></span>
       </a>
@@ -80,8 +80,8 @@
       <div class="container">
         <div class="row mb-4 align-items-center">
           <div class="col-md-6" data-aos="fade-up">
-            <h2>Work Single Page</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam necessitatibus incidunt ut officiis explicabo inventore.</p>
+            <h2>Collaboration & Mentorship</h2>
+            <p>Learning from and helping others.</p>
           </div>
         </div>
       </div>
@@ -90,28 +90,75 @@
         <div class="container">
           <div class="row align-items-stretch">
             <div class="col-md-8" data-aos="fade-up">
-              <img src="assets/img/img_1_big.jpg" alt="Image" class="img-fluid">
+              <img src="assets/img/autopilot.jpg" alt="Image" class="img-fluid">
             </div>
-            <div class="col-md-3 ml-auto" data-aos="fade-up" data-aos-delay="100">
+            <br>
+            &nbsp;
+            <!-- <div class="col-md-8" data-aos="fade-up">
+              <iframe width="650" height="400" src="https://www.youtube.com/embed/0t3wGQIypRg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div> -->
+            <br>
+            <div class="col-md-4 ml-auto" data-aos="fade-up" data-aos-delay="100">
               <div class="sticky-content">
-                <h3 class="h3">Boxed Water</h3>
-                <p class="mb-4"><span class="text-muted">Design</span></p>
+                <h3 class="h3">Mentorship</h3>
+                <p class="mb-4"><span class="text-muted">2022</span></p>
 
                 <div class="mb-5">
-                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores illo, id recusandae molestias
-                    illum unde pariatur, enim tempora.</p>
+                  <p>
+                    The 2021-2022 FIRST Tech Challenge offered me with the ability to mentor different teams across the United States. 
+                    Locally, I taught classes at NYC FIRST scrimmages and assisted teams with programming concepts like computer vision (like Redhawk Robotics). 
+                    
+                  </p>
 
                 </div>
 
-                <h4 class="h4 mb-3">What I did</h4>
+                <p class="mb-4"><span class="text-muted">FIRST Tech Challenge</span></p>
+
+                <div class="mb-5">
+                  <p>FIRST Tech Challenge robots, however, cannot achieve the same autonomous performance as Tesla Vehicles. The robots do not have the computing resources necessary to achieve full, deep-learning based
+                    autonomous driving. The Control Hub, the main robot processor, has two cores and two threads. While multi-threading is possible, it is not reccomend in the FTC-context because resource-blocking, hardware-dependent calls to the LynxBoard (CPU).
+                     It is, however, possible, to still have ultrasonic sensors and computer vision, albeit through standard OpenCV computer vision pipelines. 
+
+                  </p>
+
+                </div>
+
+                <p class="mb-4"><span class="text-muted">Proposal</span></p>
+
+                <div class="mb-5">
+                  <p>
+                    Considering the limitations that FTC Robots have, I propose using computer vision, four-wheel odometry, and ultrasonic sensors to achieve state-of-the-art localization. 
+                    This means that the robot will be able to understand its position on the field with minimal amounts of error in both the autonomous and tele-operational period. 
+                    While localization drift does not occur in the autonomous period because of its short time-frame, localization drift does occur in the tele-operational period. 
+                    In the FTC Season Ultimate Goal, for example, it would be useful to not have localization drift as it would allow us to create an odometry-based auto-aiming system. 
+
+                    Using the distance sensors and computer vision, I also plan on building obstacle subtraction algorithms, 
+                    similar to the <a href="https://www.youtube.com/watch?v=0t3wGQIypRg">ones here.</a>
+                    This would greatly improve our autonomous period as it would allow the robot to correct itself based on the un-planned obstacles on the field like another moving robot. 
+
+                    I hope to achieve these goals through continous testing and experimentation over the summer of 2022 as outlined in my timeline below. <br><br> Currently, I am looking at the following research papers to assist me in my work:
+
+                    <ul>
+                      <li><a href="http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.446.8890&rep=rep1&type=pdf">A Monocular Vision Sensor-Based Obstacle Detection Algorithm for Autonomous Robots</a></li>
+                      <li><a href="https://arxiv.org/pdf/2107.08430v2.pdf">YOLOX: Exceeding YOLO Series in 2021</a></li>
+                      <li><a href="https://arxiv.org/pdf/2002.06604v4.pdf">Key Points Estimation and Point Instance Segmentation Approach for Lane Detection</a></li>
+                    </ul>
+                  </p>
+
+                </div>
+
+                <h4 class="h4 mb-3">Timeline</h4>
                 <ul class="list-unstyled list-line mb-5">
-                  <li>Design</li>
-                  <li>HTML5/CSS3</li>
-                  <li>CMS</li>
-                  <li>Logo</li>
+                  <li>Late June 2022 - 4 Wheel Odometry Localization</li>
+                  <li>Early July 2022 - Odometry w/ Distance Sensor Fusion </li>
+                  <li>Mid-July 2022 - Pure Pursuit Path Follower</li>
+                  <li>Late-July 2022 - Low-Latency Object Detection Algorithms</li>
+                  <li>Early-August 2022 - Odometry, Distance Sensor, Vision Fusion</li>
+                  <li>Late-August 2022 - Object Subtraction Algorithms</li>
+                  <li>To Be Updated</li>
                 </ul>
 
-                <p><a href="#" class="readmore">Visit Website</a></p>
+                
               </div>
             </div>
           </div>
@@ -119,7 +166,7 @@
     </section>
 
     <!-- ======= Testimonials Section ======= -->
-    <section class="section pt-0">
+    <!-- <section class="section pt-0">
       <div class="container">
 
         <div class="testimonials-slider swiper" data-aos="fade-up" data-aos-delay="100">
@@ -137,7 +184,7 @@
                 </div>
               </div>
             </div><!-- End testimonial item -->
-
+<!-- 
             <div class="swiper-slide">
               <div class="testimonial-wrap">
                 <div class="testimonial">
@@ -151,21 +198,21 @@
               </div>
             </div><!-- End testimonial item -->
 
-          </div>
+          <!-- </div>
           <div class="swiper-pagination"></div>
         </div>
 
       </div>
-    </section><!-- End Testimonials Section -->
+    </section>End Testimonials Section
 
-  </main><!-- End #main -->
+  </main>End #main -->
 
   <!-- ======= Footer ======= -->
   <footer class="footer" role="contentinfo">
     <div class="container">
       <div class="row">
         <div class="col-sm-6">
-          <p class="mb-1">&copy; Copyright MyPortfolio. All Rights Reserved</p>
+          <p class="mb-1">&copy; Copyright Washieu Anan. All Rights Reserved</p>
           <div class="credits">
             <!--
             All the links in the footer should remain intact.
@@ -173,15 +220,15 @@
             Licensing information: https://bootstrapmade.com/license/
             Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/buy/?theme=MyPortfolio
           -->
-            Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
+            Designed by <a href="https://bootstrapmade.com/">Washieu Anan</a>
           </div>
         </div>
-        <div class="col-sm-6 social text-md-end">
+        <!-- <div class="col-sm-6 social text-md-end">
           <a href="#"><span class="bi bi-twitter"></span></a>
           <a href="#"><span class="bi bi-facebook"></span></a>
           <a href="#"><span class="bi bi-instagram"></span></a>
           <a href="#"><span class="bi bi-linkedin"></span></a>
-        </div>
+        </div> -->
       </div>
     </div>
   </footer>
