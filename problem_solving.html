@@ -5,12 +5,12 @@
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-  <title>EP - EDP</title>
+  <title>WA - CS & Algorithms</title>
   <meta content="" name="description">
   <meta content="" name="keywords">
 
   <!-- Favicons -->
-  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/browning.jpg" rel="icon">
   <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
 
   <!-- Google Fonts -->
@@ -25,51 +25,16 @@
   <!-- Template Main CSS File -->
   <link href="assets/css/style.css" rel="stylesheet">
 
-  <!-- =======================================================
-  * Template Name: MyPortfolio - v4.7.0
-  * Template URL: https://bootstrapmade.com/myportfolio-bootstrap-portfolio-website-template/
-  * Author: BootstrapMade.com
-  * License: https://bootstrapmade.com/license/
-  ======================================================== -->
+
 </head>
 
 <body>
 
-  <!-- ======= Navbar ======= -->
-  <div class="collapse navbar-collapse custom-navmenu" id="main-navbar">
-    <div class="container py-2 py-md-5">
-      <div class="row align-items-start">
-        <div class="col-md-2">
-          <ul class="custom-menu">
-            <li><a href="index.html">Home</a></li>
-            <li><a href="about.html">About Me</a></li>
-            <li><a href="services.html">Services</a></li>
-            <li class="active"><a href="works.html">Works</a></li>
-            <li><a href="contact.html">Contact</a></li>
-          </ul>
-        </div>
-        <div class="col-md-6 d-none d-md-block  mr-auto">
-          <div class="tweet d-flex">
-            <span class="bi bi-twitter text-white mt-2 mr-3"></span>
-            <div>
-              <p><em>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam necessitatibus incidunt ut officiis explicabo inventore. <br> <a href="#">t.co/v82jsk</a></em></p>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-4 d-none d-md-block">
-          <h3>Hire Me</h3>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam necessitatibus incidunt ut officiisexplicabo inventore. <br> <a href="#">myemail@gmail.com</a></p>
-        </div>
-      </div>
-
-    </div>
-  </div>
+  
 
   <nav class="navbar navbar-light custom-navbar">
     <div class="container">
-      <a class="navbar-brand" href="index.html">Washieu Anan</a>
-      <a href="#" class="burger" data-bs-toggle="collapse" data-bs-target="#main-navbar">
-        <span></span>
+      <a class="navbar-brand" href="index.html">Washieu Anan</a>        <span></span>
       </a>
     </div>
   </nav>
@@ -80,8 +45,8 @@
       <div class="container">
         <div class="row mb-4 align-items-center">
           <div class="col-md-6" data-aos="fade-up">
-            <h2>Pure Pursuit: Engineering Design Process</h2>
-            <p>Achieving a pure pursuit algorithm with motion profiling. </p>
+            <h2>CS & Algorithms</h2>
+            <p></p>
           </div>
         </div>
       </div>
@@ -90,146 +55,81 @@
         <div class="container">
           <div class="row align-items-stretch">
             <div class="col-md-8" data-aos="fade-up">
-              <img src="assets/img/pure_pursuit.png" alt="Image" class="img-fluid">
+              <img src="assets/img/6dpose.gif" alt="Image" class="img-responsive">
             </div>
             <br>
             &nbsp;
-            <!-- <div class="col-md-8" data-aos="fade-up">
-              <iframe width="650" height="400" src="https://www.youtube.com/embed/0t3wGQIypRg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-            </div> -->
+           
             <br>
             <div class="col-md-4 ml-auto" data-aos="fade-up" data-aos-delay="100">
               <div class="sticky-content">
-                <h3 class="h3">Thinking</h3>
-                <p class="mb-4"><span class="text-muted">Existing Pure Pursuit Algorithms</span></p>
+                <br>
+                <h3 class="h3">Computer Vision</h3>
+                <p class="mb-4"><span class="text-muted"></span></p>
 
                 <div class="mb-5">
                   <p>
-                    There are several solutions to Pure Pursuit. FTC Team 11115 Gluten Free has an excellent <a href="https://www.youtube.com/watch?v=3l7ZNJ21wMo&t=486s">tutorial</a> on concepts behind Pure Pursuit. There are also libraries like <a href="https://learnroadrunner.com/">RoadRunner</a> and <a>FTCLib</a> that provide out-of-the-box solutions for vector-based movement. I've looked into both 11115's tutorial series and the libraries aforementioned but I would like to explore some of the deeper concepts of pure pursuit and how we can build a robust path-follower for FTC. 
-                    The biggest problem with pure pursuit is the lack of motion profiling. This means that the robot cannot account for its instantaneous velocities and accelerations at any given point. The beginning and ends of paths do not speed up or slow down correctly. Is there a way to improve the existing pure pursuit algorithm to include motion profiling? Do solutions already exists? If so, are they adaptable to FTC-use? 
-                    These are the questions I will be exploring as I try to come up with a solution. 
-
-                  </p>
-
-                </div>
-
-                <p class="mb-4"><span class="text-muted">Research</span></p>
-
-                <div class="mb-5">
-                  <p>I have been looking into a few papers that concern Pure Pursuit alongside looking at the repositories of some other FRC/FTC teams and how they implemented Pure Pursuit. 
-
-                    Pure Pursuit is an extremely old algorithm that has many papers written on it. Here are some that I looked at: 
-                    
-                    <ul>
-                      <li>Coulter, R. Craig. Implementation of the pure pursuit path tracking algorithm. Carnegie-Mellon UNIV Pittsburgh PA Robotics INST, 1992.</li>
-                      <li> Zeng, Michael. "PI (t) D (t) Control and Motion Profiling for Omnidirectional Mobile Robots." arXiv preprint arXiv:2110.09707 (2021).</li>
-                      <li>Wang, Wei-Jen, Tusng-Ming Hsu, and Tzu-Sung Wu. "The improved pure pursuit algorithm for autonomous driving advanced system." 2017 IEEE 10th International Workshop on Computational Intelligence and Applications (IWCIA). IEEE, 2017.</li>
-                      <li>Chen, Yuanpeng, et al. "Optimization of pure pursuit controller based on pid controller and low-pass filter." 2018 21st International Conference on Intelligent Transportation Systems (ITSC). IEEE, 2018.</li>
-                      <li>Peng, Mingxing, et al. "Imitative Reinforcement Learning Fusing Vision and Pure Pursuit for Self-driving." 2020 IEEE International Conference on Robotics and Automation (ICRA). IEEE, 2020.</li>
-                    </ul>
-                    
+                    Computer vision is a field that encompasses many different topics, including object detection, pose estimation, classification, medical imaging, etc. In the FIRST Tech Challenge context, 
+                    computer vision is typically assumed to be used for object detection. At the beginning of the autonomous periods, the robot, using cameras, is to identify some game element that dictates the
+                    action of the robot. For example, in the ULTIMATE GOAl 2020-2021 FTC Challenge, robots had to identify the number of rings in the randomized starting-stack at the beginning of autonomous, determining where the robot should place the wobble goal game element. 
                    
                     <br>
-                    The papers provide a great insight as to how they implement the Pure Pursuit algorithm and some of the improvements that they have made. I was planning on using a PID-controller already but the implementation of a low-pass filter seems really interesting to me. I'll see what we can achieve by using a low pass filter or a Kalman Filter. 
-                    
-              
-                    Teams that have implemented Pure Pursuit do not include motion profiling. Don't get me wrong, pure pursuit works great for them and they have been far more successful with autonomous than I will be this year but I believe motion profiling can give the edge in speed/time for autonomous operation. 
+                    <br>
 
+                    As linked <a href="https://www.youtube.com/watch?v=F2JgAv-Ky7g">here,</a> we can see some of my work involving a robust object detection algorithm to identify the number of rings inside the starting-stack
+                    during the autonomous period in the ULTIMATE GOAL 2021-2022 FTC Season. While we did not implement this feature into our autonomous because of our localization drift (primarily because of the localization method), we were also successful in
+                    developing an algorithm that would be able to identify the (x,y) position of a ring on the field. This would useful in autonomous to collect rings other than the preloaded rings. 
+                    While I have now deleted the video that demonstrates the algorithm working, here is the code: <a href="https://github.com/BrowningUltro-10539/Ultimate-Goal/blob/master/TeamCode/src/main/java/org/firstinspires/ftc/teamcode/Experimental/Vision/RingLocator/RingLocatorPipeline.java">https://tinyurl.com/3yxkufsz</a>
+
+                    
+                    <br>
+                    <br>
+
+                    For the FREIGHT FRENZY 2021-2022 FTC Season, I decided to tackle an issue that many teams were facing with a unique approach. Prior the match, the organization of freight in the warehouse is randomized. 
+                    This poses a problem to autonomous programs that plan on scoring freight from the warehouse as many teams build their programs on pre-inputted encoder or coordinate values. This is not as accurate, however, given that many teams miss at least one-two
+                    pieces of freight in the autonomous period. What if there was a way to adapt to the randomization of the freight in the warehouse? A form of pose estimation seemed to be the answer. 
+
+                    <br>
+                    <br>
+
+                  
+                    Thus, I began to read various research papers that published their work in achieving six-dimensional pose estimation. The issue with pose estimation was the high-resource enviornment it required to compute the position and translational vectors associated with the object. 
+                    There were, however, some papers that detailed how pose estimation was possible in a low-resource enviornment, similar to the one we have in the Control Hub. Using their techniques and the custom dataset that I developed for freight localization, I was able to achieve freight localization at 1 FPS. 
+                    1 FPS seems low but it worked well enough for our purposes as we would simply have to capture an image when entering the warehouse, allowing us to extract information from the image. 
+
+                    <br>
+                    <br>
+                    Using the coordinate information I received from the model, I was not able to relocalize the robot but I was also able to understand where pieces of freight were on the field. While never implemented on a competition bot, the robot in testing was able to drive to a piece of freight correctly 99% of the time.
+                    
+                    <br>
+                    <br>
+                    Code Based Off: <a href="https://github.com/thodan/t-less_toolkit">https://github.com/thodan/t-less_toolkit</a>
                   </p>
 
+                  <img src="assets/img/freight_pose.png" alt="Image" class="img-responsive">
+                  <br>
+                  <br>
+
+                  <h3 class="h3">Localization & Movement</h3>
+                  <p class="mb-4"><span class="text-muted"></span></p>
+                  <p>
+                    Localization and movement work can be found in the <a href="problem_solving.html">Engineering Design Process page.</a>
+                  </p>
                 </div>
-
-
-
-                <p class="mb-4"><span class="text-muted">Math</span></p>
-                <div class="col-md-8" data-aos="fade-up">
-                  <p>Basis Of Pure Pursuit: Waypoint. Waypoint is a vector that can possess either 3 or 4 elements (x, y, heading, and optional: velocity). Each PP-Path contains several waypoints. </p>
-                  <img src="assets/img/engineering_design_process/IMG_0164.jpg" alt="Image" class="img-fluid">
-                </div>
-
-                <div class="col-md-8" data-aos="fade-up">
-                  <p>Pure Pursuit Motor Power Calculations: Using the current robot's localization vector and the target vector. Utilizing basic trigonometric and mathematical equations, we are able to obtain the appropriate power powers to assign to the motors. These calculations are based on the kinematics of mecanum drive. </p>
-                  <img src="assets/img/engineering_design_process/IMG_0165.jpg" alt="Image" class="img-fluid">
-                </div>
-
-                <div class="col-md-8" data-aos="fade-up">
-                  <p>Interpolation of Target Velocity for Motion Profiling: Equations based on the kinematics of mecanum drive. </p>
-                  <img src="assets/img/engineering_design_process/IMG_0166.jpg" alt="Image" class="img-fluid">
-                </div>
-
-                <div class="col-md-8" data-aos="fade-up">
-                  <p>Extended Kalman Filter Math: Imagine we have some sensor that provides the robot with some sort of input The sensor, at some #-hz polls, has noise. This can affect our calculations. Thus, we use a Kalman Filter to de-noise the input that we receive to have a smoother estimation of the reading. This involves a lot of linear algebra and multi-variable calculus. These equations are solely for my understanding. My code implementation follows this. </p>
-                  <img src="assets/img/engineering_design_process/IMG_0167.jpg" alt="Image" class="img-fluid">
-                </div>
-
-                <div class="col-md-8" data-aos="fade-up">
-                  <p>4-Wheel Odometry w/ IMU on Extended Kalman Filter Calculations: This is the localization math assuming a 4-wheel odometry system combined with IMU/Vision (aka my dream software robot). We use this equation to derive the absolute world position of the robot. It seems like a mess on the board but the equations derive out of the position of the robot using Euler Integration. Then, we apply a Kalman Filter to the readings of the sensors and the various localization inputs we have. It seems complicated but simpler in code. </p>
-                  <img src="assets/img/engineering_design_process/IMG_2976.jpeg" alt="Image" class="img-fluid">
-                </div>
-                <div class="mb-5">
-                  
-
-                </div>
-
-                <h4 class="h4 mb-3">Timeline</h4>
-                <ul class="list-unstyled list-line mb-5">
-                  <li>Late June 2022 - 4 Wheel Odometry Localization</li>
-                  <li>Early July 2022 - Odometry w/ Distance Sensor Fusion </li>
-                  <li>Mid-July 2022 - Pure Pursuit Path Follower</li>
-                  <li>Late-July 2022 - Low-Latency Object Detection Algorithms</li>
-                  <li>Early-August 2022 - Odometry, Distance Sensor, Vision Fusion</li>
-                  <li>Late-August 2022 - Object Subtraction Algorithms</li>
-                  <li>To Be Updated</li>
-                </ul>
 
                 
+                
+              </div>
+
+              
+             
               </div>
             </div>
           </div>
         </div>
     </section>
 
-    <!-- ======= Testimonials Section ======= -->
-    <!-- <section class="section pt-0">
-      <div class="container">
 
-        <div class="testimonials-slider swiper" data-aos="fade-up" data-aos-delay="100">
-          <div class="swiper-wrapper">
-
-            <div class="swiper-slide">
-              <div class="testimonial-wrap">
-                <div class="testimonial">
-                  <img src="assets/img/person_1.jpg" alt="Image" class="img-fluid">
-                  <blockquote>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam necessitatibus incidunt ut officiis
-                      explicabo inventore.</p>
-                  </blockquote>
-                  <p>&mdash; Jean Hicks</p>
-                </div>
-              </div>
-            </div><!-- End testimonial item -->
-<!-- 
-            <div class="swiper-slide">
-              <div class="testimonial-wrap">
-                <div class="testimonial">
-                  <img src="assets/img/person_2.jpg" alt="Image" class="img-fluid">
-                  <blockquote>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam necessitatibus incidunt ut officiis
-                      explicabo inventore.</p>
-                  </blockquote>
-                  <p>&mdash; Chris Stanworth</p>
-                </div>
-              </div>
-            </div><!-- End testimonial item -->
-
-          <!-- </div>
-          <div class="swiper-pagination"></div>
-        </div>
-
-      </div>
-    </section>End Testimonials Section
-
-  </main>End #main -->
 
   <!-- ======= Footer ======= -->
   <footer class="footer" role="contentinfo">
@@ -238,21 +138,11 @@
         <div class="col-sm-6">
           <p class="mb-1">&copy; Copyright Washieu Anan. All Rights Reserved</p>
           <div class="credits">
-            <!--
-            All the links in the footer should remain intact.
-            You can delete the links only if you purchased the pro version.
-            Licensing information: https://bootstrapmade.com/license/
-            Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/buy/?theme=MyPortfolio
-          -->
-            Designed by <a href="https://bootstrapmade.com/">Washieu Anan</a>
+       
+        
+            Designed by <a href="https://github.com/washieuanan">Washieu Anan</a>
           </div>
         </div>
-        <!-- <div class="col-sm-6 social text-md-end">
-          <a href="#"><span class="bi bi-twitter"></span></a>
-          <a href="#"><span class="bi bi-facebook"></span></a>
-          <a href="#"><span class="bi bi-instagram"></span></a>
-          <a href="#"><span class="bi bi-linkedin"></span></a>
-        </div> -->
       </div>
     </div>
   </footer>
